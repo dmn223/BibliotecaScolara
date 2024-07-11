@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{73D7C96A-F8F5-4316-BC21-AAF95D37A725}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>b2</RootNamespace>
+    <AssemblyName>b2</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdaugaCarte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdaugaCarte.Designer.cs">
+      <DependentUpon>AdaugaCarte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdaugaElev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdaugaElev.Designer.cs">
+      <DependentUpon>AdaugaElev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Biblioteca_BazaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Biblioteca_BazaDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Biblioteca_BazaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Biblioteca_BazaDataSet1.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Biblioteca_BazaDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Biblioteca_BazaDataSet4.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Conexiune.cs" />
+    <Compile Include="Autentificare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Autentificare.Designer.cs">
+      <DependentUpon>Autentificare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meniu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meniu.Designer.cs">
+      <DependentUpon>Meniu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imprumuta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imprumuta.Designer.cs">
+      <DependentUpon>Imprumuta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Restituie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restituie.Designer.cs">
+      <DependentUpon>Restituie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sterge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sterge.Designer.cs">
+      <DependentUpon>Sterge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VizualizareCartiImprumutate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VizualizareCartiImprumutate.Designer.cs">
+      <DependentUpon>VizualizareCartiImprumutate.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdaugaCarte.resx">
+      <DependentUpon>AdaugaCarte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdaugaElev.resx">
+      <DependentUpon>AdaugaElev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Autentificare.resx">
+      <DependentUpon>Autentificare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meniu.resx">
+      <DependentUpon>Meniu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imprumuta.resx">
+      <DependentUpon>Imprumuta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Restituie.resx">
+      <DependentUpon>Restituie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sterge.resx">
+      <DependentUpon>Sterge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VizualizareCartiImprumutate.resx">
+      <DependentUpon>VizualizareCartiImprumutate.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Biblioteca_BazaDataSet.xsc">
+      <DependentUpon>Biblioteca_BazaDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Biblioteca_BazaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Biblioteca_BazaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Biblioteca_BazaDataSet.xss">
+      <DependentUpon>Biblioteca_BazaDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Biblioteca_BazaDataSet1.xsc">
+      <DependentUpon>Biblioteca_BazaDataSet1.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Biblioteca_BazaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Biblioteca_BazaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Biblioteca_BazaDataSet1.xss">
+      <DependentUpon>Biblioteca_BazaDataSet1.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Biblioteca_BazaDataSet4.xsc">
+      <DependentUpon>Biblioteca_BazaDataSet4.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Biblioteca_BazaDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Biblioteca_BazaDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Biblioteca_BazaDataSet4.xss">
+      <DependentUpon>Biblioteca_BazaDataSet4.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Biblioteca_Baza.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
