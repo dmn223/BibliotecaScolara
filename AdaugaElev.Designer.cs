@@ -1,4 +1,4 @@
-﻿namespace b2
+namespace b2
 {
     partial class AdaugaElev
     {
@@ -159,7 +159,7 @@
             this.textBox5.Location = new System.Drawing.Point(245, 200);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(337, 29);
-            this.textBox5.TabIndex = 13;
+            this.textBox5.TabIndex = 4;
             // 
             // label5
             // 
