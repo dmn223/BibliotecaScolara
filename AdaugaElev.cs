@@ -20,7 +20,7 @@ namespace b2
         }
         bool valid(string a, string b, string c, string d, string e)
         {
-            if (a == null || b == null || c == null || d == null || e == null)
+            if (a == "" || b == "" || c == "" || d == "" || e == "")
                 return false;
             return true;
         }
@@ -50,14 +50,15 @@ namespace b2
             string prenume = textBox3.Text;
             string clasa = textBox4.Text;
             string telefon = textBox5.Text;
-            if(verif_cnp(cnp) == true)
-            {
-                MessageBox.Show("CNP folosit", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
             if (valid(cnp, nume, prenume, clasa, telefon) == false)
             {
                 MessageBox.Show("Date Incomplete", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (verif_cnp(cnp) == true)
+            {
+                MessageBox.Show("CNP folosit", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBox1.Text = "";
                 return;
             }
             using(OleDbConnection con = new OleDbConnection(Conexiune.path))

@@ -41,6 +41,7 @@ namespace b2
                     if (sters != 0)
                     {
                         MessageBox.Show("Elev sters cu succes", "Stergere", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                        textBox1.Text = "";
                         return;
                     }
                     MessageBox.Show("CNP incorect", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);   
