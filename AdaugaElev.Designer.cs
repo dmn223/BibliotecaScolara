@@ -1,4 +1,4 @@
-﻿namespace b2
+namespace b2
 {
     partial class AdaugaElev
     {
