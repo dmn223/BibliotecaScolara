@@ -33,6 +33,7 @@ namespace b2
             this.cartiTableAdapter.Fill(this.biblioteca_BazaDataSet.Carti);
             dateTimePicker1.Format = DateTimePickerFormat.Short;
             dateTimePicker1.MinDate = DateTime.Today.Date;
+
         }
         bool valid(string a, string b, string c, string d, string e, int f, string g)
         {
@@ -72,10 +73,10 @@ namespace b2
                     com.Parameters.AddWithValue("@a", nume);
                     com.Parameters.AddWithValue("@b", prenume);
                     con.Open();
-                    object chestie = com.ExecuteScalar();
-                    if (chestie != null)
+                    object result = com.ExecuteScalar();
+                    if (result != null && result != DBNull.Value)
                     {
-                        telefon = chestie.ToString();
+                        telefon = result.ToString();
                     }
                     else
                     {
@@ -142,8 +143,6 @@ namespace b2
                         com.Parameters.AddWithValue("@a", true);
                         com.Parameters.AddWithValue("@b", inventar);
                         com.ExecuteNonQuery();
-
-                        
                     }
                 }
                 this.cartiTableAdapter.Fill(this.biblioteca_BazaDataSet.Carti);

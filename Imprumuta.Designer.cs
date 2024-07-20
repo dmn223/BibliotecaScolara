@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button5 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -49,14 +49,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.numarDeInventarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.titluDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.autorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.edituraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.anulAparitieiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.localitateAparitieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cZUDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.luataDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.cartiBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.biblioteca_BazaDataSet = new b2.Biblioteca_BazaDataSet();
             this.cartiTableAdapter = new b2.Biblioteca_BazaDataSetTableAdapters.CartiTableAdapter();
@@ -67,6 +59,14 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.numarDeInventarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.titluDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.autorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.edituraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.anulAparitieiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.localitateAparitieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cZUDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.luataDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cartiBindingSource)).BeginInit();
@@ -79,7 +79,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(1258, 470);
+            this.button5.Location = new System.Drawing.Point(1210, 470);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(76, 45);
             this.button5.TabIndex = 44;
@@ -279,95 +279,23 @@
             this.cZUDataGridViewTextBoxColumn,
             this.luataDataGridViewCheckBoxColumn});
             this.dataGridView1.DataSource = this.cartiBindingSource;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.SeaShell;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.SeaShell;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridView1.Location = new System.Drawing.Point(366, 70);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(979, 338);
+            this.dataGridView1.Size = new System.Drawing.Size(920, 338);
             this.dataGridView1.TabIndex = 29;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
-            // 
-            // numarDeInventarDataGridViewTextBoxColumn
-            // 
-            this.numarDeInventarDataGridViewTextBoxColumn.DataPropertyName = "NumarDeInventar";
-            this.numarDeInventarDataGridViewTextBoxColumn.HeaderText = "NumarDeInventar";
-            this.numarDeInventarDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.numarDeInventarDataGridViewTextBoxColumn.Name = "numarDeInventarDataGridViewTextBoxColumn";
-            this.numarDeInventarDataGridViewTextBoxColumn.ReadOnly = true;
-            this.numarDeInventarDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // titluDataGridViewTextBoxColumn
-            // 
-            this.titluDataGridViewTextBoxColumn.DataPropertyName = "Titlu";
-            this.titluDataGridViewTextBoxColumn.HeaderText = "Titlu";
-            this.titluDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.titluDataGridViewTextBoxColumn.Name = "titluDataGridViewTextBoxColumn";
-            this.titluDataGridViewTextBoxColumn.ReadOnly = true;
-            this.titluDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // autorDataGridViewTextBoxColumn
-            // 
-            this.autorDataGridViewTextBoxColumn.DataPropertyName = "Autor";
-            this.autorDataGridViewTextBoxColumn.HeaderText = "Autor";
-            this.autorDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.autorDataGridViewTextBoxColumn.Name = "autorDataGridViewTextBoxColumn";
-            this.autorDataGridViewTextBoxColumn.ReadOnly = true;
-            this.autorDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // edituraDataGridViewTextBoxColumn
-            // 
-            this.edituraDataGridViewTextBoxColumn.DataPropertyName = "Editura";
-            this.edituraDataGridViewTextBoxColumn.HeaderText = "Editura";
-            this.edituraDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.edituraDataGridViewTextBoxColumn.Name = "edituraDataGridViewTextBoxColumn";
-            this.edituraDataGridViewTextBoxColumn.ReadOnly = true;
-            this.edituraDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // anulAparitieiDataGridViewTextBoxColumn
-            // 
-            this.anulAparitieiDataGridViewTextBoxColumn.DataPropertyName = "AnulAparitiei";
-            this.anulAparitieiDataGridViewTextBoxColumn.HeaderText = "AnulAparitiei";
-            this.anulAparitieiDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.anulAparitieiDataGridViewTextBoxColumn.Name = "anulAparitieiDataGridViewTextBoxColumn";
-            this.anulAparitieiDataGridViewTextBoxColumn.ReadOnly = true;
-            this.anulAparitieiDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // localitateAparitieDataGridViewTextBoxColumn
-            // 
-            this.localitateAparitieDataGridViewTextBoxColumn.DataPropertyName = "LocalitateAparitie";
-            this.localitateAparitieDataGridViewTextBoxColumn.HeaderText = "LocalitateAparitie";
-            this.localitateAparitieDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.localitateAparitieDataGridViewTextBoxColumn.Name = "localitateAparitieDataGridViewTextBoxColumn";
-            this.localitateAparitieDataGridViewTextBoxColumn.ReadOnly = true;
-            this.localitateAparitieDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // cZUDataGridViewTextBoxColumn
-            // 
-            this.cZUDataGridViewTextBoxColumn.DataPropertyName = "CZU";
-            this.cZUDataGridViewTextBoxColumn.HeaderText = "CZU";
-            this.cZUDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.cZUDataGridViewTextBoxColumn.Name = "cZUDataGridViewTextBoxColumn";
-            this.cZUDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cZUDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // luataDataGridViewCheckBoxColumn
-            // 
-            this.luataDataGridViewCheckBoxColumn.DataPropertyName = "Luata";
-            this.luataDataGridViewCheckBoxColumn.HeaderText = "Luata";
-            this.luataDataGridViewCheckBoxColumn.MinimumWidth = 6;
-            this.luataDataGridViewCheckBoxColumn.Name = "luataDataGridViewCheckBoxColumn";
-            this.luataDataGridViewCheckBoxColumn.ReadOnly = true;
-            this.luataDataGridViewCheckBoxColumn.Width = 125;
             // 
             // cartiBindingSource
             // 
@@ -419,7 +347,7 @@
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(593, 414);
+            this.button2.Location = new System.Drawing.Point(618, 414);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(146, 39);
             this.button2.TabIndex = 31;
@@ -443,7 +371,7 @@
             // 
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(828, 411);
+            this.button4.Location = new System.Drawing.Point(888, 414);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(146, 39);
             this.button4.TabIndex = 32;
@@ -455,7 +383,7 @@
             // 
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(1057, 411);
+            this.button6.Location = new System.Drawing.Point(1123, 414);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(146, 39);
             this.button6.TabIndex = 32;
@@ -463,12 +391,83 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // numarDeInventarDataGridViewTextBoxColumn
+            // 
+            this.numarDeInventarDataGridViewTextBoxColumn.DataPropertyName = "NumarDeInventar";
+            this.numarDeInventarDataGridViewTextBoxColumn.HeaderText = "NumarDeInventar";
+            this.numarDeInventarDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.numarDeInventarDataGridViewTextBoxColumn.Name = "numarDeInventarDataGridViewTextBoxColumn";
+            this.numarDeInventarDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // titluDataGridViewTextBoxColumn
+            // 
+            this.titluDataGridViewTextBoxColumn.DataPropertyName = "Titlu";
+            this.titluDataGridViewTextBoxColumn.HeaderText = "Titlu";
+            this.titluDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.titluDataGridViewTextBoxColumn.Name = "titluDataGridViewTextBoxColumn";
+            this.titluDataGridViewTextBoxColumn.ReadOnly = true;
+            this.titluDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // autorDataGridViewTextBoxColumn
+            // 
+            this.autorDataGridViewTextBoxColumn.DataPropertyName = "Autor";
+            this.autorDataGridViewTextBoxColumn.HeaderText = "Autor";
+            this.autorDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.autorDataGridViewTextBoxColumn.Name = "autorDataGridViewTextBoxColumn";
+            this.autorDataGridViewTextBoxColumn.ReadOnly = true;
+            this.autorDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // edituraDataGridViewTextBoxColumn
+            // 
+            this.edituraDataGridViewTextBoxColumn.DataPropertyName = "Editura";
+            this.edituraDataGridViewTextBoxColumn.HeaderText = "Editura";
+            this.edituraDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.edituraDataGridViewTextBoxColumn.Name = "edituraDataGridViewTextBoxColumn";
+            this.edituraDataGridViewTextBoxColumn.ReadOnly = true;
+            this.edituraDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // anulAparitieiDataGridViewTextBoxColumn
+            // 
+            this.anulAparitieiDataGridViewTextBoxColumn.DataPropertyName = "AnulAparitiei";
+            this.anulAparitieiDataGridViewTextBoxColumn.HeaderText = "AnulAparitiei";
+            this.anulAparitieiDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.anulAparitieiDataGridViewTextBoxColumn.Name = "anulAparitieiDataGridViewTextBoxColumn";
+            this.anulAparitieiDataGridViewTextBoxColumn.ReadOnly = true;
+            this.anulAparitieiDataGridViewTextBoxColumn.Width = 75;
+            // 
+            // localitateAparitieDataGridViewTextBoxColumn
+            // 
+            this.localitateAparitieDataGridViewTextBoxColumn.DataPropertyName = "LocalitateAparitie";
+            this.localitateAparitieDataGridViewTextBoxColumn.HeaderText = "LocalitateAparitie";
+            this.localitateAparitieDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.localitateAparitieDataGridViewTextBoxColumn.Name = "localitateAparitieDataGridViewTextBoxColumn";
+            this.localitateAparitieDataGridViewTextBoxColumn.ReadOnly = true;
+            this.localitateAparitieDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // cZUDataGridViewTextBoxColumn
+            // 
+            this.cZUDataGridViewTextBoxColumn.DataPropertyName = "CZU";
+            this.cZUDataGridViewTextBoxColumn.HeaderText = "CZU";
+            this.cZUDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.cZUDataGridViewTextBoxColumn.Name = "cZUDataGridViewTextBoxColumn";
+            this.cZUDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cZUDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // luataDataGridViewCheckBoxColumn
+            // 
+            this.luataDataGridViewCheckBoxColumn.DataPropertyName = "Luata";
+            this.luataDataGridViewCheckBoxColumn.HeaderText = "Luata";
+            this.luataDataGridViewCheckBoxColumn.MinimumWidth = 6;
+            this.luataDataGridViewCheckBoxColumn.Name = "luataDataGridViewCheckBoxColumn";
+            this.luataDataGridViewCheckBoxColumn.ReadOnly = true;
+            this.luataDataGridViewCheckBoxColumn.Width = 50;
+            // 
             // Imprumuta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(1346, 527);
+            this.ClientSize = new System.Drawing.Size(1298, 523);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -496,9 +495,9 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button5);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1362, 566);
+            this.MaximumSize = new System.Drawing.Size(1314, 562);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(1362, 566);
+            this.MinimumSize = new System.Drawing.Size(1314, 562);
             this.Name = "Imprumuta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Imprumuta";
@@ -538,6 +537,13 @@
         private Biblioteca_BazaDataSet biblioteca_BazaDataSet;
         private System.Windows.Forms.BindingSource cartiBindingSource;
         private Biblioteca_BazaDataSetTableAdapters.CartiTableAdapter cartiTableAdapter;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.DataGridViewTextBoxColumn numarDeInventarDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn titluDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn autorDataGridViewTextBoxColumn;
@@ -546,12 +552,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn localitateAparitieDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cZUDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn luataDataGridViewCheckBoxColumn;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button6;
     }
 }
