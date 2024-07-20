@@ -24,7 +24,7 @@ namespace b2
         }
         bool ok(string a, string b, string c, string d)
         {
-            if (a == null || b == null || c == null || d == null)
+            if (a == "" || b == "" || c == "" || d == "")
                 return false;
             return true;
         }
