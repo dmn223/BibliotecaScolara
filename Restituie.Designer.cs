@@ -31,13 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.autorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numarInventarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataRestituireDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prenumeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.titluDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clasaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imprumuturiBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.biblioteca_BazaDataSet1 = new b2.Biblioteca_BazaDataSet1();
             this.imprumuturiTableAdapter = new b2.Biblioteca_BazaDataSet1TableAdapters.ImprumuturiTableAdapter();
@@ -50,6 +43,13 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
+            this.autorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numarInventarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataRestituireDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prenumeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.titluDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clasaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imprumuturiBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.biblioteca_BazaDataSet1)).BeginInit();
@@ -61,6 +61,7 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.SeaShell;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.autorDataGridViewTextBoxColumn,
@@ -83,72 +84,10 @@
             this.dataGridView1.Location = new System.Drawing.Point(296, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(924, 284);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // autorDataGridViewTextBoxColumn
-            // 
-            this.autorDataGridViewTextBoxColumn.DataPropertyName = "Autor";
-            this.autorDataGridViewTextBoxColumn.HeaderText = "Autor";
-            this.autorDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.autorDataGridViewTextBoxColumn.Name = "autorDataGridViewTextBoxColumn";
-            this.autorDataGridViewTextBoxColumn.ReadOnly = true;
-            this.autorDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // numarInventarDataGridViewTextBoxColumn
-            // 
-            this.numarInventarDataGridViewTextBoxColumn.DataPropertyName = "NumarInventar";
-            this.numarInventarDataGridViewTextBoxColumn.HeaderText = "NumarInventar";
-            this.numarInventarDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.numarInventarDataGridViewTextBoxColumn.Name = "numarInventarDataGridViewTextBoxColumn";
-            this.numarInventarDataGridViewTextBoxColumn.ReadOnly = true;
-            this.numarInventarDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // dataRestituireDataGridViewTextBoxColumn
-            // 
-            this.dataRestituireDataGridViewTextBoxColumn.DataPropertyName = "DataRestituire";
-            this.dataRestituireDataGridViewTextBoxColumn.HeaderText = "DataRestituire";
-            this.dataRestituireDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.dataRestituireDataGridViewTextBoxColumn.Name = "dataRestituireDataGridViewTextBoxColumn";
-            this.dataRestituireDataGridViewTextBoxColumn.ReadOnly = true;
-            this.dataRestituireDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // numeDataGridViewTextBoxColumn
-            // 
-            this.numeDataGridViewTextBoxColumn.DataPropertyName = "Nume";
-            this.numeDataGridViewTextBoxColumn.HeaderText = "Nume";
-            this.numeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.numeDataGridViewTextBoxColumn.Name = "numeDataGridViewTextBoxColumn";
-            this.numeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.numeDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // prenumeDataGridViewTextBoxColumn
-            // 
-            this.prenumeDataGridViewTextBoxColumn.DataPropertyName = "Prenume";
-            this.prenumeDataGridViewTextBoxColumn.HeaderText = "Prenume";
-            this.prenumeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.prenumeDataGridViewTextBoxColumn.Name = "prenumeDataGridViewTextBoxColumn";
-            this.prenumeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.prenumeDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // titluDataGridViewTextBoxColumn
-            // 
-            this.titluDataGridViewTextBoxColumn.DataPropertyName = "Titlu";
-            this.titluDataGridViewTextBoxColumn.HeaderText = "Titlu";
-            this.titluDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.titluDataGridViewTextBoxColumn.Name = "titluDataGridViewTextBoxColumn";
-            this.titluDataGridViewTextBoxColumn.ReadOnly = true;
-            this.titluDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // clasaDataGridViewTextBoxColumn
-            // 
-            this.clasaDataGridViewTextBoxColumn.DataPropertyName = "Clasa";
-            this.clasaDataGridViewTextBoxColumn.HeaderText = "Clasa";
-            this.clasaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.clasaDataGridViewTextBoxColumn.Name = "clasaDataGridViewTextBoxColumn";
-            this.clasaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.clasaDataGridViewTextBoxColumn.Width = 125;
             // 
             // imprumuturiBindingSource
             // 
@@ -257,6 +196,69 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // autorDataGridViewTextBoxColumn
+            // 
+            this.autorDataGridViewTextBoxColumn.DataPropertyName = "Autor";
+            this.autorDataGridViewTextBoxColumn.HeaderText = "Autor";
+            this.autorDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.autorDataGridViewTextBoxColumn.Name = "autorDataGridViewTextBoxColumn";
+            this.autorDataGridViewTextBoxColumn.ReadOnly = true;
+            this.autorDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // numarInventarDataGridViewTextBoxColumn
+            // 
+            this.numarInventarDataGridViewTextBoxColumn.DataPropertyName = "NumarInventar";
+            this.numarInventarDataGridViewTextBoxColumn.HeaderText = "NumarInventar";
+            this.numarInventarDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.numarInventarDataGridViewTextBoxColumn.Name = "numarInventarDataGridViewTextBoxColumn";
+            this.numarInventarDataGridViewTextBoxColumn.ReadOnly = true;
+            this.numarInventarDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // dataRestituireDataGridViewTextBoxColumn
+            // 
+            this.dataRestituireDataGridViewTextBoxColumn.DataPropertyName = "DataRestituire";
+            this.dataRestituireDataGridViewTextBoxColumn.HeaderText = "DataRestituire";
+            this.dataRestituireDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dataRestituireDataGridViewTextBoxColumn.Name = "dataRestituireDataGridViewTextBoxColumn";
+            this.dataRestituireDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataRestituireDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // numeDataGridViewTextBoxColumn
+            // 
+            this.numeDataGridViewTextBoxColumn.DataPropertyName = "Nume";
+            this.numeDataGridViewTextBoxColumn.HeaderText = "Nume";
+            this.numeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.numeDataGridViewTextBoxColumn.Name = "numeDataGridViewTextBoxColumn";
+            this.numeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.numeDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // prenumeDataGridViewTextBoxColumn
+            // 
+            this.prenumeDataGridViewTextBoxColumn.DataPropertyName = "Prenume";
+            this.prenumeDataGridViewTextBoxColumn.HeaderText = "Prenume";
+            this.prenumeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.prenumeDataGridViewTextBoxColumn.Name = "prenumeDataGridViewTextBoxColumn";
+            this.prenumeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.prenumeDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // titluDataGridViewTextBoxColumn
+            // 
+            this.titluDataGridViewTextBoxColumn.DataPropertyName = "Titlu";
+            this.titluDataGridViewTextBoxColumn.HeaderText = "Titlu";
+            this.titluDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.titluDataGridViewTextBoxColumn.Name = "titluDataGridViewTextBoxColumn";
+            this.titluDataGridViewTextBoxColumn.ReadOnly = true;
+            this.titluDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // clasaDataGridViewTextBoxColumn
+            // 
+            this.clasaDataGridViewTextBoxColumn.DataPropertyName = "Clasa";
+            this.clasaDataGridViewTextBoxColumn.HeaderText = "Clasa";
+            this.clasaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.clasaDataGridViewTextBoxColumn.Name = "clasaDataGridViewTextBoxColumn";
+            this.clasaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.clasaDataGridViewTextBoxColumn.Width = 110;
+            // 
             // Restituie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -293,13 +295,6 @@
         private Biblioteca_BazaDataSet1 biblioteca_BazaDataSet1;
         private System.Windows.Forms.BindingSource imprumuturiBindingSource;
         private Biblioteca_BazaDataSet1TableAdapters.ImprumuturiTableAdapter imprumuturiTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn autorDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numarInventarDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataRestituireDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn prenumeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn titluDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clasaDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label1;
@@ -309,5 +304,12 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn autorDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numarInventarDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataRestituireDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prenumeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn titluDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clasaDataGridViewTextBoxColumn;
     }
 }
