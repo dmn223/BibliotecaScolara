@@ -157,7 +157,7 @@ namespace b2
             dataGridView1.Visible = true;
             string titlu = textBox2.Text;
             DataView dataView = new DataView(biblioteca_BazaDataSet.Tables["Carti"]);
-            dataView.RowFilter = $"Titlu = '{titlu}' AND Luata = '{aici}'";
+            dataView.RowFilter = $"Titlu = '{titlu}'";
             dataGridView1.DataSource = dataView;
         }
         private void button3_Click(object sender, EventArgs e)
@@ -166,7 +166,7 @@ namespace b2
             dataGridView1.Visible = true;
             string autor = textBox1.Text;
             DataView dataView = new DataView(biblioteca_BazaDataSet.Tables["Carti"]);
-            dataView.RowFilter = $"Autor = '{autor}'AND Luata = '{aici}'";
+            dataView.RowFilter = $"Autor = '{autor}'";
             dataGridView1.DataSource = dataView;
         }
         private void button4_Click(object sender, EventArgs e)
@@ -176,7 +176,7 @@ namespace b2
 
             string czu = textBox3.Text;
             DataView dataView = new DataView(biblioteca_BazaDataSet.Tables["Carti"]);
-            dataView.RowFilter = $"CZU = '{czu}'AND Luata = '{aici}'";
+            dataView.RowFilter = $"CZU = '{czu}'";
             dataGridView1.DataSource = dataView;
         }
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

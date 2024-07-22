@@ -43,6 +43,25 @@ namespace b2
                 }
             }
         }
+        bool verif_tel(string tel)
+        {
+            using (OleDbConnection con = new OleDbConnection(Conexiune.path))
+            {
+                string query = @"SELECT COUNT(*) FROM Elev WHERE NumarTelefon = @a";
+                using (OleDbCommand com = new OleDbCommand(query, con))
+                {
+                    com.Parameters.AddWithValue(@"a", tel);
+                    con.Open();
+
+                    int exist = (int)com.ExecuteScalar();
+                    if (exist != 0)
+                    {
+                        return true;
+                    }
+                    return false;
+                }
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             string cnp = textBox1.Text;
@@ -61,7 +80,13 @@ namespace b2
                 textBox1.Text = "";
                 return;
             }
-            using(OleDbConnection con = new OleDbConnection(Conexiune.path))
+            if (verif_tel(telefon) == true)
+            {
+                MessageBox.Show("Numar de telefon folosit", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBox5.Text = "";
+                return;
+            }
+            using (OleDbConnection con = new OleDbConnection(Conexiune.path))
             {
                 string query = @"INSERT INTO ELEV(CNP, Nume, Prenume, Clasa, NumarTelefon) VALUES(a, b, c, d, e)";
                 using (OleDbCommand com = new OleDbCommand(query, con))
@@ -73,8 +98,8 @@ namespace b2
                     com.Parameters.AddWithValue(@"d", clasa);
                     com.Parameters.AddWithValue(@"e", telefon);
 
-                    bool ok = Convert.ToBoolean(com.ExecuteNonQuery());
-                    if(ok == false)
+                    object ok = com.ExecuteNonQuery();
+                    if(Convert.ToBoolean(ok) == false)
                     {
                         MessageBox.Show("Elevul nu a fost introdus", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;

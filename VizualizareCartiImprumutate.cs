@@ -84,6 +84,7 @@ namespace b2
         }
         void AdaugaCArti()
         {
+            comboBox3.Items.Clear();
             foreach (string s in s3) comboBox3.Items.Add(s);
         }
         private void VizualizareCarti_Load(object sender, EventArgs e)
@@ -113,6 +114,7 @@ namespace b2
         private void button2_Click(object sender, EventArgs e)
         {
             comboBox2.Text = "Alege un autor";
+            comboBox3.Text = "Alege o carte";
             AdaugaCArti();
             DataView dataView = new DataView(biblioteca_BazaDataSet4.Tables["Imprumuturi"]);
             dataGridView1.DataSource = dataView;
