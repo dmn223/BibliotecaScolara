@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Sterge.cs
+/Sterge.Designer.cs
+/Sterge.resx
