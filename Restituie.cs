@@ -44,17 +44,25 @@ namespace b2
         {
             int ok = 0;
             string inventar = textBox3.Text;
+            string nume = textBox1.Text;
+            string prenume = textBox2.Text;
             using(OleDbConnection con = new OleDbConnection(Conexiune.path))
             {
                 con.Open();
-                string query = @"DELETE FROM Imprumuturi WHERE NumarInventar = @a";
+                string query = @"DELETE FROM Imprumuturi WHERE NumarInventar = @a AND Nume = @b AND Prenume = @c";
                 using(OleDbCommand com = new OleDbCommand(query, con))
                 {
                     com.Parameters.AddWithValue("@a", inventar);
+                    com.Parameters.AddWithValue("@b", nume);
+                    com.Parameters.AddWithValue("@c", prenume);
                     ok = (int)com.ExecuteNonQuery();
                     if(ok != 0)
                     {
                         MessageBox.Show("Cartea a fost restituita cu succes", "", MessageBoxButtons.OK, MessageBoxIcon.Information);      
+                    }
+                    else
+                    {
+                        MessageBox.Show("Nu a fost gasita cartea pe numele introdus", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
@@ -69,15 +77,13 @@ namespace b2
                         com.Parameters.AddWithValue("@a", false);
                         com.Parameters.AddWithValue("@b", inventar);
                         com.ExecuteNonQuery();
-
-                        this.imprumuturiTableAdapter.Fill(this.biblioteca_BazaDataSet1.Imprumuturi);
-                        DataView dataView = new DataView(biblioteca_BazaDataSet1.Tables[0]);
-                        dataGridView1.DataSource = dataView;
-
                         textBox3.Text = "";
                     }
                 }
             }
+            this.imprumuturiTableAdapter.Fill(this.biblioteca_BazaDataSet1.Imprumuturi);
+            DataView dataView = new DataView(biblioteca_BazaDataSet1.Tables[0]);
+            dataGridView1.DataSource = dataView;
         }
         private void button3_Click(object sender, EventArgs e)
         {
